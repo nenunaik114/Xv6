@@ -1,3 +1,11 @@
+USERNAME=nsquare
+PASSWORD=nenu123
+
+
+
+init.o: init.c
+	$(CC) $(CFLAGS) -DUSERNAME="\"nsquare\"" -DPASSWORD="\"nenu123\"" -c init.c
+
 OBJS = \
 	bio.o\
 	console.o\
